@@ -13,12 +13,15 @@ ul,ol {
   color: white;
   border-radius: 10px;
   width: 60%;
-
   background-color: green;
 }
 
 div.inputList {
   justify-content: center
+}
+
+div.inputList input[type="radio"] {
+  margin-right: 10px;
 }
 
 div.list {
@@ -52,7 +55,7 @@ div.list {
 }
 
 .row:last-of-type ul.groceries li:first-child div{
- background-color:purple;
+ background-color:#B19CD9;
 }
 
 .row:last-of-type ul.groceries li:nth-child(2) div{
