@@ -6,26 +6,69 @@ ul,ol {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .main h1 {
   text-align: center;
   color: white;
   border-radius: 10px;
   width: 60%;
-  margin-left: 20%;
+
   background-color: green;
+}
+
+div.inputList {
+  justify-content: center
+}
+
+div.list {
+  margin-top: 20px;
 }
 
 .groceries li {
   display: inline-flex;
-  width: 20%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .groceries li div{
-
+ height: 250px;
+ width: 250px;
 }
+
+.row:first-of-type ul.groceries li:first-child div{
+ background-color:skyblue;
+}
+
+.row:first-of-type ul.groceries li:nth-child(2) div{
+ background-color:lightyellow;
+}
+
+.row:first-of-type ul.groceries li:nth-child(3) div{
+ background-color:lightgreen;
+}
+
+.row:first-of-type ul.groceries li:nth-child(4) div{
+ background-color:pink;
+}
+
+.row:last-of-type ul.groceries li:first-child div{
+ background-color:purple;
+}
+
+.row:last-of-type ul.groceries li:nth-child(2) div{
+ background-color:crimson;
+}
+
+.row:last-of-type ul.groceries li:nth-child(3) div{
+ background-color:#ffa500;
+}
+
+.row:last-of-type ul.groceries li:nth-child(4) div{
+ background-color:lightgrey;
+}
+
 .row {
   width: 100%;
-  margin: 0 17%;
   margin-top: 2%;
 }
 .block {
