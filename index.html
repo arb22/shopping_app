@@ -1,55 +1,102 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Shopping App</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/index.css">
-</head>
+  <meta charset="UTF-8">
+  <title>Shopping App</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css"></head>
 <body>
   <div class="main">
-  <h1>Shopping List</h1>
+    <h1>Shopping List</h1>
 
-  <div class="inputList">
-  <span>
-  <label>Grocery Item</label>
-    <input type="text" placeholder="Tomatoes" class="groceryItem" \>
-  </span>
-  <span>Categories:
-    <label><input type="radio" name="category" value="Fish" \>Fish</label>
-  <label><input type="radio" name="category" value="Staples" \>Staples</label>
-  <label><input type="radio" name="category" value="Vegetables" \>Vegetables</label>
-  <label><input type="radio" name="category" value="Sweets" \>Sweets</label>
-  <label><input type="radio" name="category" value="Alcohol" \>Alcohol</label>
-  <label><input type="radio" name="category" value="Meat" \>Meat</label>
-  <label><input type="radio" name="category" value="Spices" \>Spices</label>
-  <label><input type="radio" name="category" value="Other" \>Other</label>
+    <div class="inputList">
+      <span>
+        <label>Grocery Item:</label>
+        <input type="text" placeholder="Tomatoes" class="groceryItem" \></span>
+      <span>
+        <label>
+          <input type="radio" name="category" value="Fish" \>Fish</label>
+        <label>
+          <input type="radio" name="category" value="Staples" \>Staples</label>
+        <label>
+          <input type="radio" name="category" value="Vegetables" \>Vegetables</label>
+        <label>
+          <input type="radio" name="category" value="Sweets" \>Sweets</label>
+        <label>
+          <input type="radio" name="category" value="Alcohol" \>Alcohol</label>
+        <label>
+          <input type="radio" name="category" value="Meat" \>Meat</label>
+        <label>
+          <input type="radio" name="category" value="Spices" \>Spices</label>
+        <label>
+          <input type="radio" name="category" checked value="Other" \>Other</label>
+        <button class="addButton" type="submit">Add</button>
       </span>
-  </div>
-
-  <div class="list">
-    <div class="row">
-      <ul class="groceries">
-      <li><div class="block">Fish:</div></li>
-        <li><div class="block">Staples:</div></li>
-        <li><div class="block">Vegetables:</div></li>
-        <li><div class="block">Sweets:</div></li>
-      </ul>
     </div>
 
-    <div class="row">
-      <ul class="groceries">
-        <li><div class="block">Alcohol:</div></li>
-        <li><div class="block">Meat:</div></li>
-        <li><div class="block">Spices:</div></li>
-        <li><div class="block">Other:</div></li>
-      </ul>
+    <div class="list">
+      <div class="row">
+        <ul class="groceries">
+          <li>
+            <div id="Fish" class="block">
+              <ul>
+              <li>Fish:</li>
+            </ul>
+            </div>
+          </li>
+          <li>
+            <div id="Staples" class="block">
+              <ul>
+              <li>Staples:</li>
+            </ul>
+            </div>
+          </li>
+          <li>
+            <div id="Vegetables" class="block">
+              <ul>
+              <li>Vegetables:</li>
+            </ul>
+            </div>
+          </li>
+          <li>
+            <div id="Sweets" class="block">
+              <ul>
+                <li>Sweets:</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <ul class="groceries">
+          <li>
+            <div id="Alcohol" class="block"><ul>
+              <li>Alcohol:</li>
+            </ul></div>
+          </li>
+          <li>
+            <div id="Meat" class="block"><ul>
+              <li>Meat:</li>
+            </ul></div>
+          </li>
+          <li>
+            <div id="Spices" class="block"><ul>
+              <li>Spices:</li>
+            </ul></div>
+          </li>
+          <li>
+            <div id="Other" class="block"><ul>
+              <li>Other:</li>
+            </ul></div>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
 
   </div>
 
-	<script src="http://code.jquery.com/jquery.min.js"></script>
-	<script src="js/app.js"></script>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
